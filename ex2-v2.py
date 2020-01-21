@@ -1,14 +1,27 @@
 inp = "((e+a).b*)*"#input("")
+"""
+Give your input in the above variable
+    a and b are the only terminals accepted by this script
+    e denotes epsilon
+    . is used for "and" operation Eg. ab = a.b
+    + is used for "or" operation Eg. a|b = a+b
+    * is the Kleene's Closure operator. You can give star operator after any closing brackets and terminals 
+"""
+
 
 _="-"
 
-start = 1
-end = 1
-cur = 1
+start = 1 # denotes start of e-nfa table
+end = 1   # denotes end of our table which is initially same as start
+cur = 1   # denotes current position of our pointer
+# this is intitial e-nfa table with only one state which is start and end both
 table = [["state","epsilon","a","b"],
           [1,_,_,_]]
 
 def print_t(table):
+    """
+    This function prints the e-nfa table
+    """
     i = table[0]
     print(f'{i[0]: <10}'+f'| {i[1]: <10}'+f'| {i[2]: <10}'+f'| {i[3]: <10}')
     print("-"*46)
@@ -28,6 +41,9 @@ def print_t(table):
         print(f'{i[0]: <10}'+f'| {x: <10}'+f'| {y: <10}'+f'| {z: <10}')
 
 def e_(cur,ed=end):
+    """
+    this fuction adds epsilon to the table
+    """
     temp = table[cur]
     try:
         table[cur] = [cur,temp[1].append(cur+1),temp[2],temp[3]]
