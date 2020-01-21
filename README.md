@@ -20,5 +20,5 @@ You can also give your custom regular expression in the first line of the progra
     e denotes epsilon
     . is used for "and" operation Eg. ab = a.b
     + is used for "or" operation Eg. a|b = a+b
-    * is the Kleene's Closure operator. You can give star operator after any closing brackets and terminals *
+    * is the Kleene's Closure operator. You can give star operator after any closing brackets and terminals*
 
