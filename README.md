@@ -16,9 +16,9 @@ python ex2-v2.py
 You can also give your custom regular expression in the first line of the program
 
 *Few things to take note of:*
-    *a and b are the only terminals accepted by this script*
-    *e denotes epsilon*
-    *. is used for "and" operation Eg. ab = a.b*
-    *+ is used for "or" operation Eg. a|b = a+b*
-    ** is the Kleene's Closure operator. You can give star operator after any closing brackets and terminals*
+1.    *a and b are the only terminals accepted by this script*
+2.    *e denotes epsilon*
+3.    *. is used for "and" operation Eg. ab = a.b*
+4.    *+ is used for "or" operation Eg. a|b = a+b*
+5.    ** is the Kleene's Closure operator. You can give star operator after any closing brackets and terminals*
 
