@@ -38,7 +38,22 @@ def detect_num(text):
 		except:
 			pass
 	return list(set(arr))
+"""
+this is original function for detecting identifier
+def is_identifier(token):
+    if token[0] in numbers or token in keywords:
+        return False
+    else:
+        return identifier(token)
 
+def identifier(token):
+    if len(token)<2 and (token[0] in alphabets or token[0] in numbers or token[0] == "_"):
+        return True
+    elif token[0] in alphabets or token[0] in numbers or token[0] == "_":
+        return identifier(token[1:])
+    else:
+        return False
+"""
 def detect_identifiers(text):
 	k = detect_keywords(text)
 	o = detect_operators(text)
