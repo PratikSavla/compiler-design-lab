@@ -1,5 +1,0 @@
-first(E): 	 []
-first(A): 	 ['e']
-first(T): 	 ['i']
-first(B): 	 ['e']
-first(F): 	 ['i']
