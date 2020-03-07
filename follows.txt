@@ -1,0 +1,5 @@
+follow(E): 	['$']
+follow(A): 	['$', '$']
+follow(T): 	['e', 'e']
+follow(B): 	['$', '$']
+follow(F): 	[]
