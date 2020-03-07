@@ -4,9 +4,9 @@
 1. Python 3.6+
 
 ### How to Run?
-Install Python 3.6+
-Clone this repository
-In command line type:
+1. Install Python 3.6+
+2. Clone this repository
+3. In command line type:
 ```
 python ex[exercise-number].py
 ```
