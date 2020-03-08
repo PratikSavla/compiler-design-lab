@@ -20,5 +20,5 @@ python ex[exercise-number].py
 - [Ex.6](ex6.py) - Computation of Leading and Trailing sets
 - [Ex.7](ex7.py) - Construction of Predictive Parsing Table
 - [Ex.8](ex8.py) - Implementation of Shift Reduce Parsing
-- [Ex.9](ex9.py) - Computation of LR(0) items (incomplete)
+- [Ex.9](ex9.py) - Computation of LR(0) items 
 - [Ex.10](ex10.py) - Intermediate Code Generation: Three Address Code, Postfix, Prefix
