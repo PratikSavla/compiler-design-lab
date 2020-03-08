@@ -1,24 +1,24 @@
-# regular-expression-to-nfa
-
-This program "ex2-v2.py" converts regular expression into e-NFA and gives e-NFA table as output.
+# MY COMPILER DESIGN LAB EXPERIMENTS/PROGRAMS
 
 ### Requirements
 1. Python 3.6+
 
 ### How to Run?
-Install Python 3.6+
-Clone this repository
-In command line type:
+1. Install Python 3.6+
+2. Clone this repository
+3. In command line type:
 ```
-python ex2-v2.py
+python ex[exercise-number].py
 ```
 
-You can also give your custom regular expression in the first line of the program
-
-*Few things to take note of:*
-1.    *a and b are the only terminals accepted by this script*
-2.    *e denotes epsilon*
-3.    *" . " is used for "and" operation Eg. ab = a.b*
-4.    *" + " is used for "or" operation Eg. a|b = a+b*
-5.    *" \* " is the Kleene's Closure operator. You can give star operator after any closing brackets and terminals*
-
+### Experiments List
+- [Ex.1](ex1.py) - Lexical Analyzer
+- [Ex.2](ex2.py) - Regular Expression to NFA
+- [Ex.3](ex3.py) - Elimination of Left Recursion
+- [Ex.4](ex4.py) - Elimination of Left Factoring
+- [Ex.5](ex5.py) - Computation of First and Follow sets
+- [Ex.6](ex6.py) - Computation of Leading and Trailing sets
+- [Ex.7](ex7.py) - Construction of Predictive Parsing Table
+- [Ex.8](ex8.py) - Implementation of Shift Reduce Parsing
+- [Ex.9](ex9.py) - Computation of LR(0) items (incomplete)
+- [Ex.10](ex10.py) - Intermediate Code Generation: Three Address Code, Postfix, Prefix
