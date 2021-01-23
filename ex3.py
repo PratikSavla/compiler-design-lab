@@ -1,14 +1,23 @@
-# #example for direct left recursion
-# gram = {"A":["Aa","Ab","c","d"]
-# }
-#example for indirect left recursion
-gram = {
-	"E":["E+T","T"],
-	"T":["T*F","F"],
-	"F":["(E)","i"]
-}
 
-def removeDirectLR(gramA, A):
+##author : Akshay Tarpara
+##Note : This code is direct and indirect left recursion
+##Some point to notedown for understanding output
+##  'e' means ϵ (epsalion)
+## A->[[‘t’,’A'’],[‘b’]] means  A -> tA' | b              
+##This above note for understanding output 
+
+
+gram = {}
+
+def add(str):                               #to rules together
+    x = str.split("->")
+    y = x[1]
+    x.pop()
+    z = y.split("|")
+    x.append(z)
+    gram[x[0]]=x[1]
+
+def removeDirectLR(gramA, A):        
 	"""gramA is dictonary"""
 	temp = gramA[A]
 	tempCr = []
@@ -113,7 +122,13 @@ def rem(gram):
 
 	return op
 
+n = int(input("Enter No of Production: "))
+for i in range(n):
+    txt=input()
+    add(txt)
+   
 result = rem(gram)
 
-for i in result:
-    print(f'{i}->{result[i]}')
+for x,y in result.items():
+    print(f'{x} -> {y}')
+
