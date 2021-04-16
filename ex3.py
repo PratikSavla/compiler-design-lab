@@ -1,5 +1,6 @@
 
-##author : Akshay Tarpara
+##author : Pratik Savla
+##contributor: Akshay Tarpara
 ##Note : This code is direct and indirect left recursion
 ##Some point to notedown for understanding output
 ##  'e' means ϵ (epsalion)
