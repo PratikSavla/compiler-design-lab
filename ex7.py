@@ -184,7 +184,7 @@ pptable = {}
 for i in result:
 	for j in tterm:
 		if j in firsts[i]:
-			pptable[(i,j)]=resMod[i[0]][0]
+			pptable[(i,j)]=resMod[i][0]
 		else:
 			pptable[(i,j)]=""
 	if "e" in firsts[i]:
