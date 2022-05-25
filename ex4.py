@@ -1,4 +1,7 @@
 from itertools import takewhile
+
+s= "S->iEtS|iEtSeS|a"
+
 def groupby(ls):
     d = {}
     ls = [ y[0] for y in rules ]
@@ -19,9 +22,8 @@ starting=""
 rules=[]
 common=[]
 alphabetset=["A'","B'","C'","D'","E'","F'","G'","H'","I'","J'","K'","L'","M'","N'","O'","P'","Q'","R'","S'","T'","U'","V'","W'","X'","Y'","Z'"]
+s = s.replace(" ", "").replace("	", "").replace("\n", "")
 
-
-s= "S->iEtS|iEtSeS|a"
 while(True):
     rules=[]
     common=[]
