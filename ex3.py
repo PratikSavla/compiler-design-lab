@@ -11,6 +11,7 @@
 gram = {}
 
 def add(str):                               #to rules together
+    str = str.replace(" ", "").replace("	", "").replace("\n", "")
     x = str.split("->")
     y = x[1]
     x.pop()
@@ -131,5 +132,11 @@ for i in range(n):
 result = rem(gram)
 
 for x,y in result.items():
-    print(f'{x} -> {y}')
+    print(f'{x} -> ', end="")
+    for index, i in enumerate(y):
+        for j in i:
+            print(j, end="")
+            if (index != len(y) - 1):
+                print(" | ", end="")
+    print()
 
